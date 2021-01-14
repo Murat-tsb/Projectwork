@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Roboto, sans-serif;
+ background: url("../image/admin3.jpg") center no-repeat;
+   -webkit-background-size: cover;
+   background-size: cover;
+}
+.dws-wrapper {
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+.dws-form {
+ background-color: rgba(255, 255, 255, 0.4);
+ padding: 15px;
+ width: 400px;
+    border-radius: 10px 10px 10px  10px;
+}
+.dws-form a {
+ text-decoration: none;
+ transition: 0.5s;
+ color: #298cad;
+}
+.dws-form a:hover {
+ color: #36d2ff;
+}
+.dws-form ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+.dws-form input {
+ display: block;
+ width: 100%;
+}
+.tab-form {
+  background-color: #ffffff;
+  display: none;
+  padding: 20px 10px 10px;
+    border-radius: 0px 5px 10px  10px;
+}
+.tab-form.active {
+ display: block;
+}
+.tab::before {
+ content: "\f234";
+ font-family: 'fontawesome', sans-serif;
+ font-size: 24px;
+ margin-right: 7px;
+ font-weight: normal;
+}
+.tab[for*="2"]::before {
+ content: "\f090";
+ font-family: 'fontawesome', sans-serif;
+ font-size: 24px;
+ margin-right: 7px;
+ font-weight: normal;
+}
+
+label.tab {
+
+ color: #ffffff;
+ font-weight: 600;
+ padding: 15px;
+ display: inline-block;
+}
+label.tab.active {
+ background: #fff;
+ color: #1b5f75;
+ border-radius: 5px 5px 0  0;
+margin-bottom: -1px;
+cursor: pointer;
+}
+.del{
+  display: none;
+}
+.input {
+ font-size: 16px;
+ border: 2px solid #e9eaea;
+ padding: 12px 14px;
+ box-sizing: border-box;
+ margin-bottom: 22px;
+ color: #1e8da6;
+ outline: none;
+}
+::-webkit-input-placeholder {color:#c4c9c9;}/* webkit */
+::-moz-placeholder          {color:#298cad;}/* Firefox 19+ */
+:-moz-placeholder           {color:#298cad;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#298cad;}/* IE */
+
+.button {
+ background: #298cad;
+ color: #ffffff;
+ font-size: 18px;
+ display: block;
+ text-align: center;
+ line-height: 46px;
+ margin-top: 30px;
+ margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.box-input {
+    position: relative;
+}
+
+.box-input input{
+    border: none;
+    border-bottom: 2px solid #e9eaea;
+    padding: 10px 0;
+}
+.box-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    color: #c4c9c9;
+    transition: .5s;
+    pointer-events: none;
+}
+.box-input input:focus ~ label,
+.box-input input:valid ~ label {
+ top: -20px;
+ font-size: 12px;
+ color: #33d3fe;
+}
+.login {
+
+}
+.button1 {
+       border-radius: 10px 10px 10px  10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 140px;
+    height: 40px;
+  }
